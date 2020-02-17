@@ -1,38 +1,44 @@
-.App {
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+/*
+The root font size decides the rem calculation,
+10px root font-size gives the other px values
+a rem value devided by 10. So 40px = 4rem
+percentage calculation:
+default browser font is 16px
+10 / 16 = 0.625 = 62.5%
+*/
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #000; 
+  background-color: #FAE03C;}
+
+.heading-primary {
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  font-size: 6rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  color: #006E6D;
+  margin-bottom: 1rem; }
+
+
+.eventsform {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
