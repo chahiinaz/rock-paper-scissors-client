@@ -13,9 +13,11 @@ function App() {
       <div className="App">
         <div className="heading-primary">
           <h1>Rock, Paper, Scissors</h1>
-          <Route exact path="/signup" component={SignupFormContainer} />
-          <Route exact path="/login" component={LoginContainer} />
         </div>
+
+        <Route exact path="/login" component={LoginContainer} />
+        <Route exact path="/signup" component={SignupFormContainer} />
+
       </div>
     </Provider>
   );
