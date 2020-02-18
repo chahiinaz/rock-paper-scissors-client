@@ -10,8 +10,8 @@ const LobbyForm = props => {
         <input
           onChange={props.handleChange}
           type="text"
-          name="name"
-          value={props.values.name}
+          name="roomname"
+          value={props.values.roomname}
         />
         <input type="submit" />
       </form>
