@@ -3,7 +3,7 @@ import React from "react";
 const LobbyForm = props => {
   return (
     <div>
-      Rooms:
+      Create a room
       <form onSubmit={props.handleSubmit}>
         <label>Name:</label>
 

@@ -18,8 +18,6 @@ export function signUp(username, email, password) {
         email: email,
         password: password
       });
-      // console.log("what is my response?", response);
-
       if (response.status === 201) {
         dispatch(signUpSuccess());
       }
@@ -29,10 +27,10 @@ export function signUp(username, email, password) {
   };
 }
 
-function loginSuccess(token) {
+function loginSuccess(data) {
   return {
     type: LOGIN_SUCCESS,
-    payload: { token: token }
+    payload: { data: data }
   };
 }
 export function login(email, password) {
@@ -42,11 +40,8 @@ export function login(email, password) {
         email: email,
         password: password
       });
-      console.log("what is my response?", response);
-
-      if (response.status === 201) {
-        dispatch(loginSuccess(response.data.token));
-      }
+      // console.log("what is my response?", response.data.token);
+      dispatch(loginSuccess(response.data));
     } catch (error) {
       throw error;
     }

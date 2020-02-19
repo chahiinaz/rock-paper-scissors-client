@@ -2,9 +2,10 @@ import React from "react";
 import "./App.css";
 import SignupFormContainer from "./components/SignUp/SignupFormContainer";
 import LoginContainer from "./components/Login/LoginContainer";
-import { Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import { connect } from "react-redux";
 import LobbyContainer from "./components/Lobby/LobbyContainer";
+import Toolbar from "./components/Toolbar";
 
 class App extends React.Component {
   url = "http://localhost:4000";
@@ -24,10 +25,12 @@ class App extends React.Component {
         <div className="heading-primary">
           <h1>Rock, Paper, Scissors</h1>
         </div>
-
-        <Route exact path="/login" component={LoginContainer} />
-        <Route exact path="/signup" component={SignupFormContainer} />
-        <Route exact path="/lobby" component={LobbyContainer} />
+        <Toolbar />
+        <Switch>
+          <Route exact path="/login" component={LoginContainer} />
+          <Route exact path="/signup" component={SignupFormContainer} />
+          <Route exact path="/lobby" component={LobbyContainer} />
+        </Switch>
       </div>
     );
   }
