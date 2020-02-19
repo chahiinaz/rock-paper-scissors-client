@@ -7,7 +7,10 @@ class Toolbar extends Component {
     console.log("this.props.toolbar", this.props);
 
     return (
-      <div>
+      <div className="header">
+        <div className="heading-primary">
+          <h1>Rock, Paper, Scissors</h1>
+        </div>
         <nav>
           <Link to="/signup">Sign up</Link>
         </nav>
