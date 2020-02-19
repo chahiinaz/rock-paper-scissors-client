@@ -33,13 +33,13 @@ class LoginContainer extends Component {
         {this.props.userLoggedIn ? (
           <h1>You are logged in</h1>
         ) : (
-          <LoginForm
-            text="Login"
-            values={this.state}
-            handleChange={this.handleChange}
-            handleSubmit={this.handleSubmit}
-          />
-        )}
+            <LoginForm
+              text="Login"
+              values={this.state}
+              handleChange={this.handleChange}
+              handleSubmit={this.handleSubmit}
+            />
+          )}
       </div>
     );
   }

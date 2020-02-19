@@ -1,0 +1,18 @@
+body {
+  font-family: $font-paragraph;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: $color-black; 
+}
+
+.heading-primary {
+  font-family: $font-heading;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  text-align: left;
+  color: $color-black;
+  margin-bottom: 1rem; 
+}
