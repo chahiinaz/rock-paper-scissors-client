@@ -1,0 +1,23 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+/*
+The root font size decides the rem calculation,
+10px root font-size gives the other px values
+a rem value devided by 10. So 40px = 4rem
+percentage calculation:
+default browser font is 16px
+10 / 16 = 0.625 = 62.5%
+*/
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; 
+  background-color: $color-grey-light-1;
+  padding: 1rem;
+}

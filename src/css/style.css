@@ -18,7 +18,8 @@ html {
 
 body {
   box-sizing: border-box;
-  background-color: #eee; }
+  background-color: #f7f7f7;
+  padding: 1rem; }
 
 body {
   font-family: "PT Sans", sans-serif;
@@ -34,12 +35,22 @@ body {
   font-weight: 700;
   letter-spacing: 0.2rem;
   text-align: left;
-  color: #006E6D;
+  color: #000;
   margin-bottom: 1rem; }
 
 .header {
-  height: 15vh;
-  background-color: #FAE03C; }
+  height: 10vh;
+  background-color: #FAE03C;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  justify-self: end;
+  align-self: end;
+  padding: 0.5rem;
+  padding-right: 2rem;
+  padding-left: 1rem; }
+
+.navigation {
+  text-align: right; }
 
 .eventsform {
   text-align: center; }

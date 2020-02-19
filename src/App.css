@@ -1,9 +1,9 @@
-*,
+/* *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  box-sizing: inherit; } */
 
 /*
 The root font size decides the rem calculation,
@@ -13,7 +13,7 @@ percentage calculation:
 default browser font is 16px
 10 / 16 = 0.625 = 62.5%
 */
-html {
+/* html {
   font-size: 62.5%; }
 
 body {
@@ -41,5 +41,5 @@ body {
 .eventsform {
   text-align: center;
 }
-
+ */
 

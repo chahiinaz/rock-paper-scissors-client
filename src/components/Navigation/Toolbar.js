@@ -11,15 +11,18 @@ class Toolbar extends Component {
         <div className="heading-primary">
           <h1>Rock, Paper, Scissors</h1>
         </div>
-        <nav>
-          <Link to="/signup">Sign up</Link>
-        </nav>
-        <nav>
-          <Link to="/login">Log in</Link>
-        </nav>
-        <nav>
-          <Link to="/lobby">lobby!</Link>
-        </nav>
+        <div className="navigation">
+          <nav>
+            <Link to="/signup">Sign up</Link>
+          </nav>
+          <nav>
+            <Link to="/login">Log in</Link>
+          </nav>
+          <nav>
+            <Link to="/lobby">lobby!</Link>
+          </nav>
+        </div>
+
       </div>
     );
   }
