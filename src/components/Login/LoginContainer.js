@@ -15,7 +15,8 @@ class LoginContainer extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
-    console.log(this.state);
+    console.log("login handlesubmit state", this.state);
+    // console.log("login handlesubmit props", this.props);
     this.props.dispatch(login(this.state.email, this.state.password));
     this.setState({ email: "", password: "" });
   };
@@ -45,8 +46,9 @@ class LoginContainer extends Component {
 }
 
 const mapStateToProps = state => {
+  console.log("login state", state);
   return {
-    userLoggedIn: state.auth.token !== null
+    userLoggedIn: state.auth.data !== null
   };
 };
 

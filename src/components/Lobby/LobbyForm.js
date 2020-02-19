@@ -3,15 +3,15 @@ import React from "react";
 const LobbyForm = props => {
   return (
     <div>
-      Rooms:
+      Create a room
       <form onSubmit={props.handleSubmit}>
         <label>Name:</label>
 
         <input
           onChange={props.handleChange}
           type="text"
-          name="name"
-          value={props.values.name}
+          name="roomname"
+          value={props.values.roomname}
         />
         <input type="submit" />
       </form>
