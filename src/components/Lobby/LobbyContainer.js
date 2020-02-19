@@ -44,6 +44,19 @@ class LobbyContainer extends Component {
     const { gameRooms } = this.props;
     const loading = !this.props.gameRooms;
 
+    if (!this.props.user.data) {
+      return (
+        <div>
+          <Link to="/signup">
+            <h2>Please sign up to enter lobby</h2>
+          </Link>
+          <Link to="/login">
+            <h2>Login if you already have an account</h2>
+          </Link>
+        </div>
+      );
+    }
+
     return (
       <div>
         {loading ? (
