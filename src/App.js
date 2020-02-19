@@ -1,11 +1,11 @@
 import React from "react";
-import "./App.css";
+import "./css/style.css";
 import SignupFormContainer from "./components/SignUp/SignupFormContainer";
 import LoginContainer from "./components/Login/LoginContainer";
 import { Switch, Route } from "react-router-dom";
 import { connect } from "react-redux";
 import LobbyContainer from "./components/Lobby/LobbyContainer";
-import Toolbar from "./components/Toolbar";
+import Toolbar from "./components/Navigation/Toolbar";
 
 class App extends React.Component {
   url = "http://localhost:4000";
@@ -22,9 +22,6 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <div className="heading-primary">
-          <h1>Rock, Paper, Scissors</h1>
-        </div>
         <Toolbar />
         <Switch>
           <Route exact path="/login" component={LoginContainer} />
