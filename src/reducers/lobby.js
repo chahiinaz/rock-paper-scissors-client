@@ -1,4 +1,5 @@
 export default function reducer(state = [], action = {}) {
+  console.log("REDUX", action);
   switch (action.type) {
     case "ALL_GAMEROOMS":
       return action.payload;
