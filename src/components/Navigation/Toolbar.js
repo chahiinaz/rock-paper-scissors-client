@@ -13,13 +13,13 @@ class Toolbar extends Component {
         </div>
         <div className="navigation">
           <nav>
-            <Link to="/signup">Sign up</Link>
+            <Link to="/signup"><button>Sign up</button></Link>
           </nav>
           <nav>
-            <Link to="/login">Log in</Link>
+            <Link to="/login"><button>Log in</button></Link>
           </nav>
           <nav>
-            <Link to="/lobby">lobby!</Link>
+            <Link to="/lobby"><button>lobby!</button></Link>
           </nav>
         </div>
 
