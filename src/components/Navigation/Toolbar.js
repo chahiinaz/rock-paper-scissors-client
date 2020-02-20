@@ -13,6 +13,9 @@ class Toolbar extends Component {
         </div>
         <div className="navigation">
           <nav>
+            <Link to="/"><button>HOME</button></Link>
+          </nav>
+          <nav>
             <Link to="/signup"><button>Sign up</button></Link>
           </nav>
           <nav>

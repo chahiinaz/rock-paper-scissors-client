@@ -8,19 +8,10 @@ class GameroomContainter extends Component {
     roomname: ""
   };
 
-
-
-  // onChoice = (event, choice) => {
-
-
-
-
-  // }
-
   onChoice = (choice) => {
     try {
       axios
-        .put(`${baseUrl}/player/choice`,
+        .put(`${baseUrl}/player/:choice`,
           { choice })
 
     } catch (error) {
@@ -29,15 +20,8 @@ class GameroomContainter extends Component {
   }
 
 
-
-  // handleRockClick = () => { console.log('Rock') }
-  // handlePaperClick = () => { console.log('Paper') }
-  // handleScissorsClick = () => { console.log('Scissors') }
-
   render() {
-    // const rock = 'rock';
-    // const paper = 'paper';
-    // const scissors = 'scissors';
+
     return (
 
       <div>
