@@ -4,14 +4,14 @@ export const USER_CREATED = "USER_CREATED";
 
 export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
 
-const baseUrl = "http://localhost:4000";
+export const baseUrl = "http://localhost:4000";
 
 function signUpSuccess() {
   return { type: USER_CREATED };
 }
 
 export function signUp(username, email, password) {
-  return async function(dispatch, getState) {
+  return async function (dispatch, getState) {
     try {
       const response = await axios.post(`${baseUrl}/signup`, {
         username: username,
@@ -34,7 +34,7 @@ function loginSuccess(data) {
   };
 }
 export function login(email, password) {
-  return async function(dispatch, getState) {
+  return async function (dispatch, getState) {
     try {
       const response = await axios.post(`${baseUrl}/login`, {
         email: email,
@@ -47,3 +47,4 @@ export function login(email, password) {
     }
   };
 }
+
