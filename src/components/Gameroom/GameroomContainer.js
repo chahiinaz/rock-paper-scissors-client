@@ -25,7 +25,7 @@ class GameroomContainter extends Component {
       // const room = this.props.gameRooms.filter(room => room.id === this.props.match.params)
       console.log("room ", room);
       console.log("choice", choice, `${instance}/player/${choice}`);
-      this.props.setPlayerChoice(choice, playerId[0], room[0].id);
+      this.props.setPlayerChoice(choice, playerId, room[0].id);
       // instance.put(`/player/${choice}`, {
       //   choice
       //   // playerId
