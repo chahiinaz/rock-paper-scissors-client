@@ -4,7 +4,7 @@ export const USER_CREATED = "USER_CREATED";
 
 export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
 
-export const baseUrl = "http://localhost:4000";
+const baseUrl = "http://localhost:4000";
 
 function signUpSuccess() {
   return { type: USER_CREATED };
