@@ -1,7 +1,7 @@
 import React from "react";
 
 function Gameroom(props) {
-  console.log("gameroom", props);
+  console.log('Game room props', props)
   return (
     <div>
       <div>
@@ -12,11 +12,11 @@ function Gameroom(props) {
           Your score: <span>0</span>
         </p>
         <p>
-          {" "}
           Opponent score: <span>0</span>
         </p>
       </div>
-      <div>DISPLAY CHOICES DIV</div>
+      {/* {console.log("Porps choice?????", props.choice)} */}
+      <div><h1>{props.choice}</h1></div>
       <div>
         <button onClick={() => props.onChoice("rock")}>Rock</button>
         <button onClick={() => props.onChoice("paper")}>Paper</button>
